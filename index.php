@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Aplikasi Peduli Diri</title>
+	<title>Aplikasi Kelas Pintar</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -32,7 +32,7 @@
 
 				<form action="proses_login.php" method="post" class="login100-form validate-form">
 					<span class="login100-form-title">
-                    Peduli Diri<br>
+                    Kelas Pintar<br>
 					Masukkan NIK dan Nama Lengkap Anda.
 					</span>
 					
