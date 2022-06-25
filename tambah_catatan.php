@@ -40,13 +40,13 @@
                 <input  name="suhu" type="number" required class="form-control" min="30" max="40" placeholder="Masukkan Suhu Tubuh">
             </div> -->
             <div class="form-group">
-                <label> Upload File</label>
+                <label> Upload File</label><br>
                 <input  name="file" type="file"  placeholder="  Upload File Anda">
             </div>
 
             <div class="form-group">
-                <label> Kolom Materi</label>
-                <textarea name="materi" cols="40"> Tulis Materi Anda Disini..>
+                <label> Kolom Materi</label><br>
+                <textarea name="materi" cols="80" rows="8">Tulis Materi Anda Disini.. </textarea>
             </div>
             <br>
 
