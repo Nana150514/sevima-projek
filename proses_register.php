@@ -18,6 +18,7 @@ if(strlen($nik) <16) {
     alert('NIK harus 16 Digit');
     window.location.assign('register.php');
     </script>";die;
+
 }else if (strlen($nik) >16){
     echo"<script>
     alert('NIK tidak boleh lebih dari 16 karakter');
@@ -35,7 +36,7 @@ if($cek) {  ?>
 }else{ 
 
     //jika data tidak ditemukan atau belum terdaftar
-    //format data penyimpanan ke config.txt
+    //format data penyimpanan ke db config .txt
     $format = "\n$nik|$nama_lengkap";
 
     //buka file config.txt
