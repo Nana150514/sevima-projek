@@ -26,6 +26,7 @@
                             <th>Mata Pelajaran</th>
                             <th>File Upload</th>
                             <th>Materi Pelajaran </th>
+                            <th>Edit</th>
                             <th>Hapus</th>
                         </tr>
                     </thead>
@@ -50,6 +51,9 @@
                         <td><?= $pisah['5'] ?></td>
                         <td><?= $pisah['6'] ?></td>
                         <td><?= $pisah['7'] ?></td>
+                        <td> 
+                          <a href="?url=edit_catatan&id_catatan=<?= pisah['0'] ?>" class="btn btn-warning"></a>
+                          <i class="fa fa-pen"></i> Edit
                         <td>
                           <a onclick="return confirm('Apakah anda ingin menghapus data ini..?')" 
                           href="hapus_catatan.php?id_catatan=<?= $pisah['0'] ?>" class="btn btn-danger">
