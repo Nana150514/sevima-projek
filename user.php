@@ -14,7 +14,7 @@ if (empty($_SESSION['nik'])) { ?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aplikasi Peduli Diri | Dashboard</title>
+  <title>Aplikasi Kelas Pintar | Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -70,7 +70,7 @@ if (empty($_SESSION['nik'])) { ?>
     <!-- Brand Logo -->
     <a href="" class="brand-link">
       <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Aplikasi Peduli Diri</span>
+      <span class="brand-text font-weight-light">Aplikasi Kelas Pintar</span>
     </a>
 
     <!-- Sidebar -->
@@ -107,16 +107,16 @@ if (empty($_SESSION['nik'])) { ?>
             <a href="?page=tambah_catatan" class="nav-link">
               <i class="nav-icon fa fa-pencil-alt"></i>
               <p>
-                Tambah Catatan 
+                Tambah Catatan
               </p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="?page=riwayat_perjalanan" class="nav-link">
+            <a href="?page=data_materi" class="nav-link">
               <i class="nav-icon fa fa-th-list"></i>
               <p>
-                Riwayat Perjalanan
+                Data Materi
               </p>
             </a>
           </li>
@@ -151,8 +151,8 @@ if (empty($_SESSION['nik'])) { ?>
           include'tambah_catatan.php';
         break;
 
-        case 'riwayat_perjalanan';
-          include'riwayat_perjalanan.php';
+        case 'data_materi';
+          include'data_materi.php';
         break;
 
         case 'edit_catatan.php';
@@ -164,7 +164,7 @@ if (empty($_SESSION['nik'])) { ?>
             break;
       }
     }else{
-      echo"<br><h4> Selamat datang di Aplikasi Peduli Diri.<br> Memudahkan mencatat riwayat perjalanan anda.</h4>";
+      echo"<br><h4> Selamat datang di Aplikasi Kelas Pintar.<br> Memudahkan mencatat materi anda.</h4>";
       echo"<br>Anda Login Sebagai : ";
       echo"<h4>".$_SESSION['nama_lengkap']."</h4>";
   }
@@ -179,7 +179,7 @@ if (empty($_SESSION['nik'])) { ?>
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>UKK RPL 2022</b> Aplikasi Peduli Diri
+      <b>SEVIMA 2022</b> Aplikasi Kelas Pintar
     </div>
     <strong>Copyright &copy; <?php echo date("Y"); ?> </strong> Naia Fitri
   </footer>
