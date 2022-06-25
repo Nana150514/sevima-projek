@@ -10,7 +10,7 @@
     </section> -->
             <div class="card-info mb-4">
               <div class="card-header">
-              <h5>Data Riwayat Perjalanan</h5>
+              <h5>Data Materi</h5>
                 <!-- <a href="export.php" class="btn btn-outline-light text-dark"> Export Data</a> -->
               </div>
             </div>
@@ -23,16 +23,17 @@
                             <th>No</th>
                             <th>Tanggal</th>
                             <th>Jam</th>
-                            <th>Lokasi Berkunjung</th>
-                            <th>Suhu Tubuh</th>
-                            <!-- <th>Hapus</th> -->
+                            <th>Mata Pelajaran</th>
+                            <th>File Upload</th>
+                            <th>Materi Pelajaran </th>
+                            <th>Hapus</th>
                         </tr>
                     </thead>
                 <tbody>
                   <?php
-                  //memanggil file data_perjalanan.txt
+                  //memanggil file catatan_user.txt
                   $no=1;
-                  $data = file('data_perjalanan.txt', FILE_IGNORE_NEW_LINES);
+                  $data = file('catatan_user.txt', FILE_IGNORE_NEW_LINES);
                   $user = $_SESSION['nik']."|".$_SESSION['nama_lengkap'];
 
                   //foreach data sebagai value
@@ -48,11 +49,12 @@
                         <td><?= $pisah['4'] ?></td>
                         <td><?= $pisah['5'] ?></td>
                         <td><?= $pisah['6'] ?></td>
-                        <!-- <td>
+                        <td><?= $pisah['7'] ?></td>
+                        <td>
                           <a onclick="return confirm('Apakah anda ingin menghapus data ini..?')" 
                           href="hapus_catatan.php?id_catatan=<?= $pisah['0'] ?>" class="btn btn-danger">
                           <i class="fa fa-trash"></i> Hapus
-                      </td> -->
+                      </td>
                   </tr>
                   <?php } } ?>
                 </tbody>
