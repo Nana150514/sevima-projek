@@ -52,7 +52,7 @@
                         <td><?= $pisah['6'] ?></td>
                         <td><?= $pisah['7'] ?></td>
                         <td> 
-                          <a href="?url=edit_catatan&id_catatan=<?= pisah['0'] ?>" class="btn btn-warning"></a>
+                          <a href="?page=edit_catatan&id_catatan=<?= pisah['0'] ?>" class="btn btn-warning">
                           <i class="fa fa-pen"></i> Edit
                         <td>
                           <a onclick="return confirm('Apakah anda ingin menghapus data ini..?')" 

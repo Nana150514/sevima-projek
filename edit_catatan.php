@@ -54,7 +54,7 @@
     <!-- form start -->
     <div class="card-body">
     <?php
-        $data= file('data_perjalanan.txt', FILE_IGNORE_NEW_LINES);
+        $data= file('.txt', FILE_IGNORE_NEW_LINES);
         $id_catatan = $_GET['id_catatan'];
         foreach($data as $value){
             $pisah = explode("|", $value);
@@ -79,13 +79,13 @@
             </div>
 
             <div class="form-group">
-                <label> File Upload</label>
+                <label> File Upload</label><br>
                 <input value="<?= $pisah['6']; ?>" name="file" type="file" required class="form-control" placeholder="Masukkan Suhu Tubuh">
             </div>
 
             <div class="form-group">
-                <label> Kolom Materi</label>
-                <textarea value="<?= $pisah['7']; ?>"name="materi" cols="40">  Tulis Materi Anda Disini..>
+            <label> Kolom Materi</label><br>
+                <textarea value="<?= $pisah['7']; ?>" name="materi" cols="80" rows="8">Tulis Materi Anda Disini.. </textarea>
             </div>
             <br>
 
