@@ -6,15 +6,16 @@ $nik = $_SESSION['nik'];
 $nama_lengkap = $_SESSION['nama_lengkap'];
 $tgl = date('d-m-Y');
 $jam = date('H:i');
-$lokasi = $_POST['lokasi'];
-$suhu = $_POST['suhu'];
+$pelajaran = $_POST['pelajaran'];
+$file = $_POST['file'];
+$materi = $_POST['materi'];
 $id_catatan = rand(0, 100000);
 
 //format simpan file ke data_perjalanan.txt
-$format = "\n$id_catatan|$nik|$nama_lengkap|$tgl|$jam|$lokasi|$suhu Celcius";
+$format = "\n$id_catatan|$nik|$nama_lengkap|$tgl|$jam|$pelajaran|$file|$materi";
 
-//buka file data_perjalanan.txt
-$file = fopen('data_perjalanan.txt', 'a');
+//buka file catatan_user.txt
+$file = fopen('catatan_user.txt', 'a');
 
 //tulis isian sesuai format
 fwrite($file, $format);
@@ -26,5 +27,5 @@ fclose($file);
 
 <script type="text/javascript">
     alert('Data perjalanan berhasil disimpan.');
-    window.location.assign('user.php?page=riwayat_perjalanan');
+    window.location.assign('user.php?page=data_materi');
 </script>
