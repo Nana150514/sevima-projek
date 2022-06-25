@@ -11,7 +11,7 @@ $file = $_POST['file'];
 $materi = $_POST['materi'];
 $id_catatan = rand(0, 100000);
 
-//format simpan file ke data_perjalanan.txt
+//format simpan file ke catatan_user.txt
 $format = "\n$id_catatan|$nik|$nama_lengkap|$tgl|$jam|$pelajaran|$file|$materi";
 
 //buka file catatan_user.txt
@@ -26,6 +26,6 @@ fclose($file);
 ?>
 
 <script type="text/javascript">
-    alert('Data perjalanan berhasil disimpan.');
+    alert('Data berhasil disimpan.');
     window.location.assign('user.php?page=data_materi');
 </script>

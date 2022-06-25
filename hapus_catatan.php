@@ -19,7 +19,7 @@ if($pisah['0']==$id_catatan){
 ?>
 
 <script type="text/javascript">
-    alert('Data perjalanan berhasil dihapus.');
+    alert('Data berhasil dihapus.');
     window.location.assign('user.php?page=data_materi');
 </script>
 

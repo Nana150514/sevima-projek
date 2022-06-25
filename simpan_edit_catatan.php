@@ -9,7 +9,7 @@ $file = $_POST['file'];
 $materi = $_POST['materi'];
 $id_catatan = $_POST['id_catatan'];
 
-//format simpan file ke data_perjalanan.txt
+//format simpan file ke catatan_user.txt
 $format = "$id_catatan|$nik|$nama_lengkap|$tanggal|$jam|$pelajaran|$file|$materi";
 
 $no = 0;
