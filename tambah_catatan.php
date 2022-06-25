@@ -3,13 +3,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h3>Input Data Perjalanan Anda.</h3>
+            <h3>Input Catatan Materi Anda.</h3>
           </div>
         </div>
       </div>
     </section> -->
     <div class="card-header">
-    <h5>Input Data Perjalanan Anda.</h5>
+    <h5>Input Catatan Materi Anda.</h5>
     </div>
 </div>
      <!-- /.card-header -->
@@ -31,13 +31,22 @@
 
             <div class="form-group">
             <!-- id="googleMap" style="width:100%;height:380px;"> -->
-                <label> Pilih Lokasi </label>
-                <input name="lokasi" type="text" onkeypress='return harusHuruf(event)' required class="form-control" placeholder="Masukkan Lokasi">
+                <label> Mata Pelajaran </label>
+                <input name="pelajaran" type="text" onkeypress='return harusHuruf(event)' required class="form-control" placeholder="Masukkan Mata Pelajaran">
+            </div>
+
+            <!-- <div class="form-group">
+                <label> Suhu Tubuh</label>
+                <input  name="suhu" type="number" required class="form-control" min="30" max="40" placeholder="Masukkan Suhu Tubuh">
+            </div> -->
+            <div class="form-group">
+                <label> Upload File</label>
+                <input  name="file" type="file"  placeholder="  Upload File Anda">
             </div>
 
             <div class="form-group">
-                <label> Suhu Tubuh</label>
-                <input  name="suhu" type="number" required class="form-control" min="30" max="40" placeholder="Masukkan Suhu Tubuh">
+                <label> Kolom Materi</label>
+                <textarea name="materi" cols="40"> Tulis Materi Anda Disini..>
             </div>
             <br>
 
